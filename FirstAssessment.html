@@ -41,42 +41,45 @@
                   <div class="full">
                      <div class="center-desk">
                         <div class="logo">
-                           <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                           <a href="homepage.php"><img src="images/logo.png" alt="#" /></a>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="col-md-8 col-sm-12">
-                  <nav class="navigation navbar navbar-expand-md navbar-dark navb">
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                     </button>
-                     <div class="collapse navbar-collapse" id="navbarsExample04">
-                        <ul class="navbar-nav mr-auto">
-                           <li class="nav-item">
-                              <a class="nav-link" href="index.html">Home</a>
-                           </li>
-                           <li class="nav-item active">
-                              <a class="nav-link" href="Assessment.html">Assessment</a>
-                           </li>
-                               <li class="nav-item">
-                              <a class="nav-link" href="Courses.html">Courses</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="about.html">About Us</a>
-                           </li>
-                        </ul>
-                     </div>
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarsExample04">
+                          <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                  <a class="nav-link" href="homepage.php">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="Assessment.html">Assessment</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="Courses.html">Courses</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="about.html">About Us</a>
+                              </li>
+                              <li class="nav-item d-md-none">
+                                  <a class="nav-link" href="logout.php">Logout</a>
+                              </li>
+                          </ul>
+                      </div>
                   </nav>
-               </div>
-               <div class="col-md-2">
+              </div>
+              <div class="col-md-2">
                   <ul class="email text_align_right">
-                     <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                      <li class="d_none"><a href="logout.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                   </ul>
-               </div>
-            </div>
-         </div>
+              </div>
+          </div>
       </div>
+  </div>
       <!-- end header inner -->
 
       <!-- New Content Start -->
@@ -146,6 +149,22 @@
             padding: 10px;
         }
 
+        .specialized {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .specialized-header {
+            background-color: #201e1e;
+            color: white;
+            padding: 20px 10px;
+            margin-bottom: 10px;
+        }
+
+        .specialized-content {
+            padding: 10px;
+        }
+
         .question {
         font-size: 16px;
         margin-bottom: 10px;
@@ -166,7 +185,7 @@
         }
 
         th, td {
-            text-align: center;
+            text-align: left;
             padding: 8px;
             border-bottom: 1px solid #ddd;
         }
@@ -225,101 +244,1409 @@
 
   <main>
       <section class="genquest">
-          <h2 class="genquest-header">GENERAL QUESTIONS:</h2>
+          <h2 class="genquest-header">GENERAL SUBJECTS</h2>
           <div class="genquest-content">
       
 
       <table>
           <tr>
               <th>Question</th>
-              <th>Very Often</th>
-              <th>Quite Often</th>
-              <th>Occasionally</th>
-              <th>Very Rarely</th>
-              <th>Never</th>
+              <th>Stongly Disagree</th>
+              <th>Disagree</th>
+              <th>Agree</th>
+              <th>Strongly Agree</th>
           </tr>
       <form onsubmit="return validateForm()" action="ThankYou.html">
+         <tr>
+            <strong>A. English</strong>
+         </tr>
           <tr>
-              <td class="question">1. Are you easily distracted by external stimuli or unrelated thoughts?</td>
-              <td class="option"><input type="radio" name="q1" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q1" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+              <td class="question">1. I find it easy to understand and interpret English.</td>
               <td class="option"><input type="radio" name="q1" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q1" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q1" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">2. Do you often feel overwhelmed or have difficulty managing multiple tasks at once?</td>
-              <td class="option"><input type="radio" name="q2" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q2" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+              <td class="question">2. I am able to proofread my work in English with confidence.</td>
               <td class="option"><input type="radio" name="q2" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q2" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q2" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">3. Are you experiencing challenges in staying focused on specific tasks or activities?</td>
-              <td class="option"><input type="radio" name="q3" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q3" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+              <td class="question">3. I am able to understand English with different accents.</td>
               <td class="option"><input type="radio" name="q3" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q3" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q3" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">4. Do you frequently misplace or lose important items?</td>
-              <td class="option"><input type="radio" name="q4" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q4" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+              <td class="question">4. I am confident in speaking English in public. </td>
               <td class="option"><input type="radio" name="q4" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q4" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q4" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">5. Do you find it challenging to stay organized and keep track of deadlines or appointments?</td>
-              <td class="option"><input type="radio" name="q5" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q5" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q5" value="2"> 2</td>
+              <td class="question">5. I believe I can write clear and concise English essays.</td>
               <td class="option"><input type="radio" name="q5" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q5" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+              <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q5" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">6. Are you experiencing difficulties in problem-solving or decision-making?</td>
-              <td class="option"><input type="radio" name="q6" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q6" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+              <td class="question">6. I enjoy reading English literature.</td>
               <td class="option"><input type="radio" name="q6" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q6" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q6" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">7. Are you experiencing any changes in your mood or emotional state, such as increased anxiety or irritability?</td>
-              <td class="option"><input type="radio" name="q7" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q7" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+              <td class="question">7. I feel that I am improving my English language skills.</td>
               <td class="option"><input type="radio" name="q7" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q7" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q7" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">8. You emphasize the importance of giving back to the community?</td>
-              <td class="option"><input type="radio" name="q8" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q8" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+              <td class="question">8. I can construct my sentences using English efficiently.</td>
               <td class="option"><input type="radio" name="q8" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q8" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q8" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">9. You can tell if something work-related is going wrong?</td>
-              <td class="option"><input type="radio" name="q9" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q9" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+              <td class="question">9. I can easily pronounce difficult words.</td>
               <td class="option"><input type="radio" name="q9" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q9" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q9" value="4"> 4</td>
           </tr>
           <tr>
-              <td class="question">10. You give others the responsibility to make important decisions about their own jobs?</td>
-              <td class="option"><input type="radio" name="q10" value="4"> 4</td>
-              <td class="option"><input type="radio" name="q10" value="3"> 3</td>
-              <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+              <td class="question">10.	I use English as my main language when conversing with others.</td>
               <td class="option"><input type="radio" name="q10" value="1"> 1</td>
-              <td class="option"><input type="radio" name="q10" value="0"> 0</td>
+              <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q10" value="4"> 4</td>
           </tr>
+          <tr>
+            <td class="question">11. My English vocabulary is broad.</td>
+            <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+        </tr>
+        <tr>
+         <td class="question">12. I am confident in my grammar.</td>
+         <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">13. I use English in my daily life.</td>
+            <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">14. I find myself preferring to speak English more rather than my native language.</td>
+            <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">15. I can properly interpret deep words in English.</td>
+            <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">16. I enjoy expressing myself creatively through English, whether it's writing stories, poetry, or scripts. </td>
+            <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">17. I can properly interpret deep words in English.</td>
+            <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">18. I can use English to communicate effectively in a variety of settings, both formal and informal.</td>
+            <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">19.I can use English to build relationships and networks.</td>
+            <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">20. I am always seeking opportunities to practice my English.</td>
+            <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+         </tr>
       </table>
+      <br>
+
+      <table>
+         <tr>
+            <th>Question</th>
+            <th>Stongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+         </tr>
+     <form onsubmit="return validateForm()" action="ThankYou.html">
+        <tr>
+           <strong>B. Filipino</strong>
+        </tr>
+         <tr>
+             <td class="question">1. I prefer watching shows or movies in Tagalog.</td>
+             <td class="option"><input type="radio" name="q1" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q1" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">2. I know how to use rin/din and raw/daw in a sentence.</td>
+             <td class="option"><input type="radio" name="q2" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q2" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">3. I am familiar with Filipino literature, such as Ibong Adarna and Florante at Laura.</td>
+             <td class="option"><input type="radio" name="q3" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q3" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">4. I am interested in Filipino arts, culture, and literature. </td>
+             <td class="option"><input type="radio" name="q4" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q4" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">5. I prefer hearing lectures from a teacher who uses Tagalog compared to a teacher who likely uses English.</td>
+             <td class="option"><input type="radio" name="q5" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+             <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q5" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">6. I am interested in studying Filipino subjects.</td>
+             <td class="option"><input type="radio" name="q6" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q6" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">7. I am fluent in using Filipino as my language.</td>
+             <td class="option"><input type="radio" name="q7" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q7" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">8. I can communicate well with others using Filipino as my language.</td>
+             <td class="option"><input type="radio" name="q8" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q8" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">9. I prefer reading a book written in Filipino language.</td>
+             <td class="option"><input type="radio" name="q9" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q9" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">10. I am skilled in constructing sentences and paragraphs using the Filipino language.</td>
+             <td class="option"><input type="radio" name="q10" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q10" value="4"> 4</td>
+         </tr>
+         <tr>
+           <td class="question">11.	I often use the cultural norms of Filipinos like po and opo.</td>
+           <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+       </tr>
+       <tr>
+        <td class="question">12.	I’ll likely recommend the Tagalog language to learn for those who can’t speak or understand it.</td>
+        <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">13.	I do well in the Filipino subjects.</td>
+           <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">14.	I know the definitions of old Filipino words such as salumpwet.</td>
+           <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">15.	I am confident in my grammar when using Filipino or Tagalog.</td>
+           <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">16.	When signing up for an application, I want to fill out the forms in Tagalog.</td>
+           <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">17.	I know the difference between pang-abay and pang-uri.</td>
+           <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">18.	I have a huge interest in the topics discussed in Filipino subjects.</td>
+           <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">19.	I know how and when to use unlapi, gitlapi, and hulapi.</td>
+           <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">20.	I’m interested in learning Baybayin.</td>
+           <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+        </tr>
+     </table>
+     <br>
+
+     <table>
+        <tr>
+         <th>Question</th>
+         <th>Stongly Disagree</th>
+         <th>Disagree</th>
+         <th>Agree</th>
+         <th>Strongly Agree</th>
+        </tr>
+    <form onsubmit="return validateForm()" action="ThankYou.html">
+       <tr>
+          <strong>C. Science</strong>
+       </tr>
+        <tr>
+            <td class="question">1.	I enjoy conducting fun experiments at home/at school.</td>
+            <td class="option"><input type="radio" name="q1" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q1" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">2.	I am interested in learning more about a wide range of topics in physics.</td>
+            <td class="option"><input type="radio" name="q2" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q2" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">3.	I am interested in learning more about a wide range of topics, from molecules and cells to organisms and communities.</td>
+            <td class="option"><input type="radio" name="q3" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q3" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">4.	I am interested in learning about celestial objects, space, and the physical realm as a whole. </td>
+            <td class="option"><input type="radio" name="q4" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q4" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">5.	I enjoy learning about scientific concepts and theories.</td>
+            <td class="option"><input type="radio" name="q5" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+            <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q5" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">6.	I find science to be an innovative factor.</td>
+            <td class="option"><input type="radio" name="q6" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q6" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">7.	I prefer to pursue a future profession that uses scientific knowledge and abilities.</td>
+            <td class="option"><input type="radio" name="q7" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q7" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">8.	I am interested in conducting experiments and exploring scientific phenomena.</td>
+            <td class="option"><input type="radio" name="q8" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q8" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">9.	I find science classes interesting and engaging.</td>
+            <td class="option"><input type="radio" name="q9" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q9" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">10. I am interested in the structures and scientific names of plants, flower and fruits.</td>
+            <td class="option"><input type="radio" name="q10" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q10" value="4"> 4</td>
+        </tr>
+        <tr>
+          <td class="question">11. I mostly enjoy memorizing the periodic table of elements.</td>
+          <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+      </tr>
+      <tr>
+       <td class="question">12. I am interested in science that covers animals and animal life.</td>
+       <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+       <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+       <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+       <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">13. I am interested in the study of genes or genetics.</td>
+          <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">14. I'm interested in debunking myths through experimentation and scientific fact.</td>
+          <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">15. I am interested in learning more about the history of science.</td>
+          <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">16. I am comfortable with using technology and tools for scientific investigations.</td>
+          <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">17. I am excited about the potential of science to improve our lives.</td>
+          <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">18. I am motivated to pursue a career in a science-related field. </td>
+          <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">19. I find science classes challenging but rewarding.  </td>
+          <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">20. I believe that science is important for understanding the world around us. </td>
+          <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+       </tr>
+    </table>
+    <br>
+
+    <table>
+       <tr>
+         <th>Question</th>
+         <th>Stongly Disagree</th>
+         <th>Disagree</th>
+         <th>Agree</th>
+         <th>Strongly Agree</th>
+       </tr>
+   <form onsubmit="return validateForm()" action="ThankYou.html">
+      <tr>
+         <strong>D. Math</strong>
+      </tr>
+       <tr>
+           <td class="question">1. I enjoy solving math problems in my free time.</td>
+           <td class="option"><input type="radio" name="q1" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q1" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">2. Math classes are my favorite part of the school day..</td>
+           <td class="option"><input type="radio" name="q2" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q2" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">3. I look forward to math class more than any other subject.</td>
+           <td class="option"><input type="radio" name="q3" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q3" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">4. I feel confident in my ability to understand complex math concepts. </td>
+           <td class="option"><input type="radio" name="q4" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q4" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">5. I often seek out additional resources (books, videos) to learn more about math.</td>
+           <td class="option"><input type="radio" name="q5" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+           <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q5" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">6. Math problems stimulate my curiosity.</td>
+           <td class="option"><input type="radio" name="q6" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q6" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">7. I enjoy working collaboratively with peers on math projects.</td>
+           <td class="option"><input type="radio" name="q7" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q7" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">8. I feel motivated to improve my math skills.</td>
+           <td class="option"><input type="radio" name="q8" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q8" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">9. I am curious about advanced topics in math (e.g., calculus, statistics).</td>
+           <td class="option"><input type="radio" name="q9" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q9" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">10. I appreciate the logical reasoning skills that math helps develop.</td>
+           <td class="option"><input type="radio" name="q10" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q10" value="4"> 4</td>
+       </tr>
+       <tr>
+         <td class="question">11. I look forward to math homework.</td>
+         <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+     </tr>
+     <tr>
+      <td class="question">12. I use math in my everyday life. </td>
+      <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+      <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+      <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+      <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">13. I understand the basic concepts taught in math classes.</td>
+         <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">14. I enjoy explaining mathematical concept to others.</td>
+         <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">15. I appreciate the history and development of mathematical concepts.</td>
+         <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">16. Interactive math activities engage me.</td>
+         <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">17. I learn math best through real-world examples.</td>
+         <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">18. I am confident in my math abilities. </td>
+         <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">19. I can understand math easily.  </td>
+         <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">20. I feel motivated to improve my math skills. </td>
+         <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+      </tr>
+   </table>
+   <br>
+
+   <main>
+      <section class="specialized">
+          <h2 class="specialized-header">	SPECIALIZED SUBJECTS</h2>
+          <div class="specialized-content">
+      
+
+      <table>
+          <tr>
+            <th>Question</th>
+            <th>Stongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+          </tr>
+      <form onsubmit="return validateForm()" action="ThankYou.html">
+         <tr>
+            <strong>A. STEM</strong>
+         </tr>
+          <tr>
+              <td class="question">1. I enjoy investigating the properties, composition, and structure of matter.</td>
+              <td class="option"><input type="radio" name="q1" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q1" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">2. I enjoy studying chemical reactions.</td>
+              <td class="option"><input type="radio" name="q2" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q2" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">3. I am curious on how the biological factor of life works. </td>
+              <td class="option"><input type="radio" name="q3" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q3" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">4. I enjoy learning about theories about science.</td>
+              <td class="option"><input type="radio" name="q4" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q4" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">5. I like using the periodic table whenever I get the chance.</td>
+              <td class="option"><input type="radio" name="q5" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+              <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q5" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">6. I like to solve problems involving rational function, equations, and inequalities.</td>
+              <td class="option"><input type="radio" name="q6" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q6" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">7. I can easily solve addition, subtraction, multiplication, and division.</td>
+              <td class="option"><input type="radio" name="q7" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q7" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">8. I am confident in my ability to perform well in Mathematics.</td>
+              <td class="option"><input type="radio" name="q8" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q8" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">9. I am interested to learn more about the laws of logarithms.</td>
+              <td class="option"><input type="radio" name="q9" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q9" value="4"> 4</td>
+          </tr>
+          <tr>
+              <td class="question">10. I think choosing the STEM strand is applicable and suited for my ability and knowledge..</td>
+              <td class="option"><input type="radio" name="q10" value="1"> 1</td>
+              <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+              <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+              <td class="option"><input type="radio" name="q10" value="4"> 4</td>
+          </tr>
+          <tr>
+            <td class="question">11. I am interested in identifying the difference between prokaryotic cells and eukaryotic cells.</td>
+            <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+        </tr>
+        <tr>
+         <td class="question">12. I am interested to learn about how gravity, mass and motion functions in Physics.</td>
+         <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">13. I am interested in learning calculus.</td>
+            <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">14. I enjoy identifying the distance, size, and angles of a shape.</td>
+            <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">15. I am analytically and logically driven.</td>
+            <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">16. I’m interested in learning complex topics that’s under science, technology, engineering, and mathematics </td>
+            <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">17.  I am interested to learn about the study of animals.</td>
+            <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">18. I am confidently driven in innovating.</td>
+            <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question">19. I would rather prefer to solve math equations over writing an essay.</td>
+            <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+         </tr>
+         <tr>
+            <td class="question"> 20. I would like to pursue any STEM related courses. </td>
+            <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+         </tr>
+      </table>
+      <br>
+
+      <table>
+         <tr>
+            <th>Question</th>
+            <th>Stongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+         </tr>
+     <form onsubmit="return validateForm()" action="ThankYou.html">
+        <tr>
+           <strong>B. ABM  </strong>
+        </tr>
+         <tr>
+             <td class="question">1. I know my academic strengths in accountancy, business and management. </td>
+             <td class="option"><input type="radio" name="q1" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q1" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">2. I think the ABM strand will help me achieve my career goals.</td>
+             <td class="option"><input type="radio" name="q2" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q2" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">3. I believe the ABM strand will provide me with valuable skills for my future career.</td>
+             <td class="option"><input type="radio" name="q3" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q3" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">4. I think the ABM strand is well-suited to my strengths and interests. </td>
+             <td class="option"><input type="radio" name="q4" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q4" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">5. I understand financial information easily.</td>
+             <td class="option"><input type="radio" name="q5" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+             <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q5" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">6. I am equipped with Business communication skills which include listening, negotiation, and networking skills.</td>
+             <td class="option"><input type="radio" name="q6" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q6" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">7. I am knowledgeable with Financial Concepts.</td>
+             <td class="option"><input type="radio" name="q7" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q7" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">8. I am interested in business studies.</td>
+             <td class="option"><input type="radio" name="q8" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q8" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">9. I desire for a business-related career.</td>
+             <td class="option"><input type="radio" name="q9" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q9" value="4"> 4</td>
+         </tr>
+         <tr>
+             <td class="question">10. I am driven by a passion to make a positive impact in the world through business.</td>
+             <td class="option"><input type="radio" name="q10" value="1"> 1</td>
+             <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+             <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+             <td class="option"><input type="radio" name="q10" value="4"> 4</td>
+         </tr>
+         <tr>
+           <td class="question">11.	Specialized subjects in ABM enables me to be fully equipped for college.</td>
+           <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+       </tr>
+       <tr>
+        <td class="question">12.	I am determined to establish a business in the future.</td>
+        <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">13.	I enjoy learning about economics.</td>
+           <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">14.	I like working with numbers and data.</td>
+           <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">15.	I enjoy learning about economics and business.</td>
+           <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">16.	I feel confident in my ability to understand economic concepts.</td>
+           <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">17.	I feel capable of solving complex problems in economics.</td>
+           <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">18.	I am financially literate.</td>
+           <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">19.	I know how to manage my money wisely.</td>
+           <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+        </tr>
+        <tr>
+           <td class="question">20.	I am interested in the concept of entrepreneurship.</td>
+           <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+        </tr>
+     </table>
+     <br>
+
+     <table>
+        <tr>
+         <th>Question</th>
+         <th>Stongly Disagree</th>
+         <th>Disagree</th>
+         <th>Agree</th>
+         <th>Strongly Agree</th>
+        </tr>
+    <form onsubmit="return validateForm()" action="ThankYou.html">
+       <tr>
+          <strong>C.	HUMSS</strong>
+       </tr>
+        <tr>
+            <td class="question">1.	I can understand core beliefs of the major world religions (e.g., Christianity, Islam, Buddhism, Hinduism, and Judaism).  </td>
+            <td class="option"><input type="radio" name="q1" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q1" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">2.	I believe that freedom of belief and religious expression are essential in diverse societies.</td>
+            <td class="option"><input type="radio" name="q2" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q2" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">3.	I want to study different religions that increases my respect for religious diversity and other certain beliefs.</td>
+            <td class="option"><input type="radio" name="q3" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q3" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">4.	I am interested in identifying and learning religious symbols, rituals, and practices from multiple religions.</td>
+            <td class="option"><input type="radio" name="q4" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q4" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">5.	I find subjects that focus on looking at the world and its people from various points of view interesting and worth understanding..</td>
+            <td class="option"><input type="radio" name="q5" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+            <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q5" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">6.	I am convinced that learning various social science disciplines helps me understand society more comprehensively.  </td>
+            <td class="option"><input type="radio" name="q6" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q6" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">7.	I believe that psychology has a significant impact on my understanding of human behavior.  </td>
+            <td class="option"><input type="radio" name="q7" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q7" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">8.	I think that family plays a crucial role in shaping social behavior.  </td>
+            <td class="option"><input type="radio" name="q8" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q8" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">9.	I am aware about gender equality and its significant issue in modern society.  </td>
+            <td class="option"><input type="radio" name="q9" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q9" value="4"> 4</td>
+        </tr>
+        <tr>
+            <td class="question">10. I believe that learning about human developmental stages helps me understand different life challenges.  </td>
+            <td class="option"><input type="radio" name="q10" value="1"> 1</td>
+            <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+            <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+            <td class="option"><input type="radio" name="q10" value="4"> 4</td>
+        </tr>
+        <tr>
+          <td class="question">11.	I am interested in politics in the Philippines.</td>
+          <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+      </tr>
+      <tr>
+       <td class="question">12. I am vocal in my opinions and views about politics. </td>
+       <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+       <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+       <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+       <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">13. I am aware of the major political ideologies (i.e., liberalism, socialism, conservatism, etc.)</td>
+          <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">14. I have the ability to recognize the nature, dimensions, types, and consequences of power.</td>
+          <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">15.	I am aware of the rights and responsibilities as an individual and as a member of society.</td>
+          <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">16. I understand the value and how Social Science act in a society.</td>
+          <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">17. I understand that cultural beliefs have an impact on shaping societal norms.</td>
+          <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">18. I know how to determine the relationship between gender ideology and gender inequality. </td>
+          <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">19.	I want to analyze the behavior of the person's personality in terms of Ego, etc. </td>
+          <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+       </tr>
+       <tr>
+          <td class="question">20.	I would like to pursue a career in which communication is a valuable aspect (i.e lawyer or reporter). </td>
+          <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+       </tr>
+    </table>
+    <br>
+
+    <table>
+       <tr>
+         <th>Question</th>
+         <th>Stongly Disagree</th>
+         <th>Disagree</th>
+         <th>Agree</th>
+         <th>Strongly Agree</th>
+       </tr>
+   <form onsubmit="return validateForm()" action="ThankYou.html">
+      <tr>
+         <strong>D. TVL - HE</strong>
+      </tr>
+       <tr>
+           <td class="question">1.	I enjoy practical learning task as it provides a hands-on approach to skill development. ]</td>
+           <td class="option"><input type="radio" name="q1" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q1" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">2. I prefer learning through demonstrations and direct application. </td>
+           <td class="option"><input type="radio" name="q2" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q2" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">3.	I am motivated to develop technical skills as part of my preparation for future employment in the field. </td>
+           <td class="option"><input type="radio" name="q3" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q3" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">4.	I have strong teamwork skills which have enabled me to effectively collaborate with peers contribute positively to my future employment in the field of work. </td>
+           <td class="option"><input type="radio" name="q4" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q4" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">5. I often seek out additional resources (books, videos) to learn more about math.</td>
+           <td class="option"><input type="radio" name="q5" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+           <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q5" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">6.	I am interested in learning technical skills for me to be able to apply them in real-world situations and enhance my readiness for the workplace.</td>
+           <td class="option"><input type="radio" name="q6" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q6" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">7.	I am motivated to pursue a career in the technical-vocational field as it offers unique opportunity for me to blend my interest with practical hands-on skills.</td>
+           <td class="option"><input type="radio" name="q7" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q7" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">8.	I am interested in how to promote tourism, products, and services.</td>
+           <td class="option"><input type="radio" name="q8" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q8" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">9.	I developed strong verbal communication skills which are essential for delivering excellent customer service.</td>
+           <td class="option"><input type="radio" name="q9" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q9" value="4"> 4</td>
+       </tr>
+       <tr>
+           <td class="question">10.	I can be persuasive in terms of product selling.</td>
+           <td class="option"><input type="radio" name="q10" value="1"> 1</td>
+           <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+           <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+           <td class="option"><input type="radio" name="q10" value="4"> 4</td>
+       </tr>
+       <tr>
+         <td class="question">11.	I am good at collecting, organizing, and analyzing information.  </td>
+         <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+     </tr>
+     <tr>
+      <td class="question">12.	I want to study the basic concepts in FOS ( Front Office Service ). </td>
+      <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+      <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+      <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+      <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">13.	I am interested in exploring opportunities in FOS ( Front Office Service ) as a career.</td>
+         <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">14.	I am capable of assessing one's PECs ( Personal Entrepreneurial Competencies ) such as characteristics, attributes, lifestyle, skills and traits. </td>
+         <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">15.	I am interested in identifying the different products/services available in the market.</td>
+         <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">16.	I believe I posses a pleasing personality that will contribute positively to my future employment in the field of work. </td>
+         <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">17.	I can be attentive and cooperative which can contribute to my teamwork skills for future employment. </td>
+         <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">18.	I have a strong improvisation and analytical skills particularly in high-pressure situations. </td>
+         <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">19.	I am interested in acquiring a job that is social-oriented like Tourism.  </td>
+         <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+      </tr>
+      <tr>
+         <td class="question">20.	I make a conscious effort to welcome guests warmly and courteously as a practice that is essential as part of any role.  </td>
+         <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+         <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+         <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+         <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+      </tr>
+   </table>
+   <br>
+
+   <table>
+      <tr>
+         <th>Question</th>
+         <th>Stongly Disagree</th>
+         <th>Disagree</th>
+         <th>Agree</th>
+         <th>Strongly Agree</th>
+      </tr>
+  <form onsubmit="return validateForm()" action="ThankYou.html">
+     <tr>
+        <strong>E. GAS </strong>
+     </tr>
+      <tr>
+          <td class="question">1. </td>
+          <td class="option"><input type="radio" name="q1" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q1" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q1" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q1" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">2.	</td>
+          <td class="option"><input type="radio" name="q2" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q2" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q2" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q2" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">3.  </td>
+          <td class="option"><input type="radio" name="q3" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q3" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q3" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q3" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">4.  </td>
+          <td class="option"><input type="radio" name="q4" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q4" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q4" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q4" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">5. </td>
+          <td class="option"><input type="radio" name="q5" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q5" value="3"> 2</td>
+          <td class="option"><input type="radio" name="q5" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q5" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">6.	</td>
+          <td class="option"><input type="radio" name="q6" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q6" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q6" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q6" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">7.	</td>
+          <td class="option"><input type="radio" name="q7" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q7" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q7" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q7" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">8.	</td>
+          <td class="option"><input type="radio" name="q8" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q8" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q8" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q8" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">9.  </td>
+          <td class="option"><input type="radio" name="q9" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q9" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q9" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q9" value="4"> 4</td>
+      </tr>
+      <tr>
+          <td class="question">10.	</td>
+          <td class="option"><input type="radio" name="q10" value="1"> 1</td>
+          <td class="option"><input type="radio" name="q10" value="2"> 2</td>
+          <td class="option"><input type="radio" name="q10" value="3"> 3</td>
+          <td class="option"><input type="radio" name="q10" value="4"> 4</td>
+      </tr>
+      <tr>
+        <td class="question">11.	</td>
+        <td class="option"><input type="radio" name="q11" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q11" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q11" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q11" value="4"> 4</td>
+    </tr>
+    <tr>
+     <td class="question">12.	 </td>
+     <td class="option"><input type="radio" name="q12" value="1"> 1</td>
+     <td class="option"><input type="radio" name="q12" value="2"> 2</td>
+     <td class="option"><input type="radio" name="q12" value="3"> 3</td>
+     <td class="option"><input type="radio" name="q12" value="4"> 4</td>
+     </tr>
+     <tr>
+        <td class="question">13.	</td>
+        <td class="option"><input type="radio" name="q13" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q13" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q13" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q13" value="4"> 4</td>
+     </tr>
+     <tr>
+        <td class="question">14.  </td>
+        <td class="option"><input type="radio" name="q14" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q14" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q14" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q14" value="4"> 4</td>
+     </tr>
+     <tr>
+        <td class="question">15.	</td>
+        <td class="option"><input type="radio" name="q15" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q15" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q15" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q15" value="4"> 4</td>
+     </tr>
+     <tr>
+        <td class="question">16.	 </td>
+        <td class="option"><input type="radio" name="q16" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q16" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q16" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q16" value="4"> 4</td>
+     </tr>
+     <tr>
+        <td class="question">17.	 </td>
+        <td class="option"><input type="radio" name="q17" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q17" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q17" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q17" value="4"> 4</td>
+     </tr>
+     <tr>
+        <td class="question">18.	 </td>
+        <td class="option"><input type="radio" name="q18" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q18" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q18" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q18" value="4"> 4</td>
+     </tr>
+     <tr>
+        <td class="question">19.	  </td>
+        <td class="option"><input type="radio" name="q19" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q19" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q19" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q19" value="4"> 4</td>
+     </tr>
+     <tr>
+        <td class="question">20.	  </td>
+        <td class="option"><input type="radio" name="q20" value="1"> 1</td>
+        <td class="option"><input type="radio" name="q20" value="2"> 2</td>
+        <td class="option"><input type="radio" name="q20" value="3"> 3</td>
+        <td class="option"><input type="radio" name="q20" value="4"> 4</td>
+     </tr>
+  </table>
           <div class="submit-button">
               <input type="submit" value="Submit">
           </div>
@@ -371,6 +1698,7 @@
                               <h3>Useful Link</h3>
                               <ul class="fullink">
                                  <li><a href="homepage.php">Home</a></li>
+                                 <li><a href="E-Lecture.html">E-LECTURE</a></li>
                                  <li><a href="Courses.html">COURSES</a></li>
                                  <li><a href="about.html">About Us</a></li>
                               </ul>
